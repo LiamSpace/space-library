@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Space文档', 
+  title: 'Space', 
   head: [
     // ['link', { rel: 'ico', href: '/logo.ico' }]
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./logo.ico` }]

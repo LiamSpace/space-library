@@ -1,22 +1,22 @@
 <template>
   <div class="demo-button">
     <div>
-      <dt-button>默认按钮</dt-button>
-      <dt-button type="primary">主要按钮</dt-button>
-      <dt-button type="success">成功按钮</dt-button>
-      <dt-button type="info">信息按钮</dt-button>
-      <dt-button type="warning">警告按钮</dt-button>
-      <dt-button type="danger">危险按钮</dt-button>
+      <sp-button>默认按钮</sp-button>
+      <sp-button type="primary">主要按钮</sp-button>
+      <sp-button type="success">成功按钮</sp-button>
+      <sp-button type="warning">警告按钮</sp-button>
+      <sp-button type="danger">危险按钮</sp-button>
+      <sp-button type="info">信息按钮</sp-button>
     </div>
   </div>
 </template>
 
 <script>
-import DtButton from '../src/button'
+import SpButton from '../src/Button'
 export default {
   name: 'buttonWrap',
   components: {
-    DtButton
+    SpButton
   }
 }
 </script>

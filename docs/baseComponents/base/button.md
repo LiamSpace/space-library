@@ -1,26 +1,33 @@
-# 基础组件
+# Button 按钮
 ---
 
 <Common-Democode title="基本用法" description="基本按钮用法">
   <use-button></use-button>
   <highlight-code slot="codeText" lang="vue">
-    <template>
-      <div class="demo-button">
-        <div>
-          <dt-button>默认按钮</dt-button>
-          <dt-button type="primary">主要按钮</dt-button>
-          <dt-button type="success">成功按钮</dt-button>
-          <dt-button type="info">信息按钮</dt-button>
-          <dt-button type="warning">警告按钮</dt-button>
-          <dt-button type="danger">危险按钮</dt-button>
-        </div>
-      </div>
-    </template>
+    <sp-button>默认按钮</sp-button>
+    <sp-button type="primary">主要按钮</sp-button>
+    <sp-button type="success">成功按钮</sp-button>
+    <sp-button type="warning">警告按钮</sp-button>
+    <sp-button type="danger">危险按钮</sp-button>
+    <sp-button type="info">信息按钮</sp-button>
   </highlight-code>
 </Common-Democode>
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
+
+<Common-Democode title="文字按钮" description="没有边框没有背景色">
+  <!-- <use-fontButton></use-fontButton> -->
+  <use-fontButton></use-fontButton> 
+  <highlight-code slot="codeText" lang="vue">
+    <sp-button type="text">文字按钮</sp-button>
+    <sp-button type="text" disabled>文字按钮</sp-button>
+  </highlight-code>
+</Common-Democode>
+
+| 参数        | 说明           | 类型  |    可选值        | 默认值     |
+| ------------|:-------------:|:-------------:|:----------:|:-----:|
+| size      | 尺寸 | String | mini \ small \ medium | —— |
+| type      | 类型 | String | default \ primary \ success \ warning \ danger \ info | default |
+| round     | 圆角 | Boolean | —— | false |
+| disabled  | 禁用 | Boolean | —— | false |
+

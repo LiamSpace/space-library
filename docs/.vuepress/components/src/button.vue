@@ -1,54 +1,37 @@
 <template>
-  <button
-    class="dt-button"
-    @click="handleClick"
-    :disabled="disabled"
-    :autofocus="autofocus"
-    :type="nativeType"
-    :class="[
-      size ? 'dt-button--' + size : '',
-      type ? 'dt-button--' + type : '',
-      {
-        'is-disabled': disabled,
-        'is-round': round,
-        'is-plain': plain
-      }
-    ]">
-    <i :class="icon" v-if="icon"></i>
+    <button
+       class="sp-button"
+       :disabled="disabled"
+       @click="handleClick"
+       :class="[
+            type ? 'sp-button--'+ type :'',
+            size ? 'sp-button--'+ size :'',
+            {
+                'is-disabled':disabled,
+                'is-round':round,
+            }
+       ]" 
+    >
     <span v-if="$slots.default"><slot></slot></span>
-  </button>
+    </button>
 </template>
 
 <script>
-export default {
-  name: 'DtButton',
-
-  props: {
-    size: String,
-    type: {
-      type: String,
-      default: 'default'
-    },
-    nativeType: {
-      type: String,
-      default: 'button'
-    },
-    disabled: Boolean,
-    round: Boolean,
-    plain: Boolean,
-    autofocus: Boolean,
-    icon: {
-      type: String,
-      default: ''
+    export default {
+        name:'sp-button',
+        props:{
+            type:{
+                type:String,
+                default:'default'
+            },
+            size:String,
+            round: Boolean,
+            disabled:Boolean,
+        },
+        methods:{
+            handleClick(event){
+                this.$emit('click',event)
+            }
+        }
     }
-  },
-  methods: {
-    handleClick (event) {
-      this.$emit('click', event)
-    }
-  },
-  mounted () {
-    this.$emit('click', event)
-  }
-}
 </script>
