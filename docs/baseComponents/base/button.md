@@ -2,7 +2,7 @@
 ---
 
 <Common-Democode title="基本用法" description="基本按钮用法">
-  <use-button></use-button>
+  <use-Button-button></use-Button-button>
   <highlight-code slot="codeText" lang="vue">
     <sp-button>默认按钮</sp-button>
     <sp-button type="primary">主要按钮</sp-button>
@@ -16,8 +16,7 @@
 
 
 <Common-Democode title="文字按钮" description="没有边框没有背景色">
-  <!-- <use-fontButton></use-fontButton> -->
-  <use-fontButton></use-fontButton> 
+  <use-Button-fontButton></use-Button-fontButton>
   <highlight-code slot="codeText" lang="vue">
     <sp-button type="text">文字按钮</sp-button>
     <sp-button type="text" disabled>文字按钮</sp-button>

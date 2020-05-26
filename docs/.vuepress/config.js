@@ -9,7 +9,7 @@ module.exports = {
   dest: './dist',  
   port: 7821, 
   themeConfig: { 
-    sidebarDepth:2,
+
     // 添加导航栏
     nav: [
       { text: '首页', link: '/' },
@@ -22,36 +22,36 @@ module.exports = {
       '/baseComponents/': [
         {
           title:'起步',
-          // collapsable: true,
+          collapsable: false,
           children:[
             'start/intro'
           ]
         },
         {
-          title: '布局类组件',
-          // collapsable: true,
+          title: '组件',
+          collapsable: false,
           children: [
             'base/button',
-            'base/test2',
-            'base/test3',
+            'base/link',
+            'base/radio',
             'base/test4',
           ]
         },
         {
           title: '可视化组件',
-          // collapsable: true,
+          collapsable: false,
           children: [
           ]
         },
         {
           title: '工具类组件',
-          // collapsable: true,
+          collapsable: false,
           children: [
           ]
         },
         {
           title: '方法类函数',
-          // collapsable: true,
+          collapsable: false,
           children: [
           ]
         }
@@ -82,6 +82,7 @@ module.exports = {
           ]
         }
       ]
-    }
+    },
+    sidebarDepth:2,
   }
 }

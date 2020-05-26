@@ -1,0 +1,258 @@
+.theme-default-content:not(.custom) a:hover {
+  text-decoration: none !important;
+}
+a{
+  position: relative;
+  font-size:14px;
+  &.default{
+    color: #606266;
+    &:hover{
+      color: #409eff;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #409eff;
+      }
+    }
+  }
+  &.primary{
+    color: #409eff;
+    &:hover{
+      color: #66b1ff;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #66b1ff;
+      }
+    }
+  }
+  &.success{
+    color: #67c23a;
+    &:hover{
+      color: #85ce61;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #85ce61;
+      }
+    }
+  }
+  &.warning{
+    color: #e6a23c;
+    &:hover{
+      color: #ebb563;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #ebb563;
+      }
+    }
+  }
+  &.danger{
+    color: #f56c6c;
+    &:hover{
+      color: #f78989;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #f78989;
+      }
+    }
+  }
+  &.info{
+    color: #909399;
+    &:hover{
+      color: #a6a9ad;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:1px solid #a6a9ad;
+      }
+    }
+  }
+
+
+
+
+  &.default{
+    &.is-disabled{
+      color: #c0c4cc;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+  &.primary{
+    &.is-disabled{
+      color: #a0cfff;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+  &.success{
+    &.is-disabled{
+      color: #b3e19d;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+  &.warning{
+    &.is-disabled{
+      color: #f3d19e;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+  &.danger{
+    &.is-disabled{
+      color: #fab6b6;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+  &.info{
+    &.is-disabled
+    {
+      color: #c8c9cc;
+      cursor: not-allowed;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+    &.no-underline{
+      &::after{
+        content: '';
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-bottom:none;
+      }
+    }
+  }
+}

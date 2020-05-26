@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SpButton from '../src/Button'
+import SpButton from '../../src/Button'
 export default {
   name: 'buttonWrap',
   components: {
