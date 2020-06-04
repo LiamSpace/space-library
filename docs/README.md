@@ -4,7 +4,7 @@ heroImage: /logo.png
 heroText: Space 组件库
 tagline: UI库
 actionText: 快速上手 →
-actionLink: /baseComponents/start/intro
+actionLink: /start/intro
 features:
 - title: 简单易用
   details: 根据文档给出的使用方法，可进行快速的原型搭建。

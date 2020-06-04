@@ -7,8 +7,7 @@
         style="width: 100%">
         <el-table-column
           prop="params"
-          label="参数"
-          width="140">
+          label="参数">
         </el-table-column>
         <el-table-column
           prop="describe"
@@ -21,7 +20,8 @@
         </el-table-column>
         <el-table-column
           prop="optionValue"
-          label="可选值">
+          label="可选值"
+          width="320">
         </el-table-column>
         <el-table-column
           prop="defaultValue"
@@ -66,7 +66,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .api-wrap {
   + .api-wrap {
     margin: 40px 0;

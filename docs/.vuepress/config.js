@@ -13,13 +13,13 @@ module.exports = {
     // 添加导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/baseComponents/start/intro' },
+      { text: '文档', link: '/start/intro' },
       { text: '我的博客', link: 'https://blog.liamspace.top/' },
       { text: 'Github', link: 'https://github.com/LiamSpace' },
   ],
     // 为以下路由添加侧边栏
     sidebar:{
-      '/baseComponents/': [
+      '/': [
         {
           title:'起步',
           collapsable: false,
@@ -34,13 +34,27 @@ module.exports = {
             'base/button',
             'base/link',
             'base/radio',
-            'base/test4',
+            // 'base/test4',
           ]
         },
         {
-          title: '可视化组件',
+          title: '代码片段',
           collapsable: false,
           children: [
+            {
+              title:'CSS片段',
+              collapsable: false,
+              children:[
+                'codeSnippet/card'
+              ]
+            },
+            {
+              title:'JS片段',
+              collapsable: false,
+              children:[
+                
+              ]
+            }
           ]
         },
         {
