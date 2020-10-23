@@ -3,10 +3,7 @@
 <Common-Democode title="基础用法" description="此处选项不易过多">
   <basic-use-Form-radio></basic-use-Form-radio>
   <highlight-code slot="codeText" lang="vue">
-    <sp-link type="primary">主要链接</sp-link>
-    <sp-link type="success">成功链接</sp-link>
-    <sp-link type="warning">警告链接</sp-link>
-    <sp-link type="danger">危险链接</sp-link>
-    <sp-link type="info">信息链接</sp-link>
+    <sp-radio v-model="radio" name="radio" label="1">备选项1</sp-radio>
+    <sp-radio v-model="radio" name="radio" label="2">备选项2</sp-radio>
   </highlight-code>
 </Common-Democode>

@@ -1,14 +1,14 @@
 module.exports = {
-  title: 'Space', 
+  title: 'Space',
   head: [
     // ['link', { rel: 'ico', href: '/logo.ico' }]
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./logo.ico` }]
   ],
-  
-  description: 'Just for fun', 
-  dest: './dist',  
-  port: 7821, 
-  themeConfig: { 
+
+  description: 'Just for fun',
+  dest: './dist',
+  port: 7821,
+  themeConfig: {
 
     // 添加导航栏
     nav: [
@@ -16,14 +16,14 @@ module.exports = {
       { text: '文档', link: '/start/intro' },
       { text: '我的博客', link: 'https://blog.liamspace.top/' },
       { text: 'Github', link: 'https://github.com/LiamSpace' },
-  ],
+    ],
     // 为以下路由添加侧边栏
-    sidebar:{
+    sidebar: {
       '/': [
         {
-          title:'起步',
+          title: '起步',
           collapsable: false,
-          children:[
+          children: [
             'start/intro'
           ]
         },
@@ -42,17 +42,17 @@ module.exports = {
           collapsable: false,
           children: [
             {
-              title:'CSS片段',
+              title: 'CSS片段',
               collapsable: false,
-              children:[
+              children: [
                 'codeSnippet/card'
               ]
             },
             {
-              title:'JS片段',
+              title: 'JS片段',
               collapsable: false,
-              children:[
-                
+              children: [
+
               ]
             }
           ]
@@ -61,6 +61,14 @@ module.exports = {
           title: '工具类组件',
           collapsable: false,
           children: [
+            'tools/browser',
+            // {
+            //   title: '关于浏览器',
+            //   collapsable: false,
+            //   children: [
+            //     'tools/browser'
+            //   ]
+            // },
           ]
         },
         {
@@ -97,6 +105,6 @@ module.exports = {
         }
       ]
     },
-    sidebarDepth:2,
+    sidebarDepth: 2,
   }
 }
